@@ -15,7 +15,7 @@ display (JSON.stringify(lotrCitiesArray.slice(0,5)), 'five', 'span')
 // Displays the last 5 cities in lotrCitiesArray
 display (JSON.stringify(lotrCitiesArray.slice(lotrCitiesArray.length-5)), 'six', 'span')
 // Displays the 3rd to 5th city in lotrCitiesArray
-display (`${JSON.stringify(lotrCitiesArray.slice(2,3))}, ${JSON.stringify(lotrCitiesArray.slice(4,5))}`, 'seven', 'span')
+display (`${JSON.stringify(lotrCitiesArray.slice(2,5))}`, 'seven', 'span')
 // Using Array.prototype.splice(), remove "Rohan" from lotrCitiesArray
 lotrCitiesArray.splice(2,1)
 display (JSON.stringify(lotrCitiesArray), 'eight', 'span')
@@ -31,7 +31,7 @@ display (JSON.stringify(lotrCitiesArray), 'eleven', 'span')
 // Displays first 14 characters from bestThing
 display (bestThing.slice(0,14), 'twelve', 'span')
 // Diisplays the first 12 characters from bestThing
-display (bestThing.slice(0,12), 'thirteen', 'span')
+display (bestThing.slice(bestThing.length-12,bestThing.length), 'thirteen', 'span')
 // Display the characters between the 23rd and 38th position of bestThing
 display (bestThing.slice(22,38), 'fourteen', 'span')
 // Displays 23rd through 38th characters using substring()
